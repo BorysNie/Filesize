@@ -6,14 +6,12 @@ class filesize {
 
     double file_size = 0;
     String characters = "abcdefghijklmnopqrstuvwxyz123456";
-    String file_mb = "MB";
-    String file_extention = ".txt";
 
     System.out.println("Enter file size (MB): ");
     Scanner x = new Scanner(System.in);
     float the_size = x.nextFloat(); // Idk why but you need to convert it...
 
-    String file_name = new String(the_size + file_mb + file_extention);
+    String file_name = new String(the_size + "MB.txt");
 
     if (the_size > 0) {
       File f = new File(file_name);

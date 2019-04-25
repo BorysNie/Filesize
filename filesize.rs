@@ -26,6 +26,7 @@ fn create_file(user_input: String) -> Result<(), Error> {
 }
 
 fn main() {
+    println!("Enter a file size (MB): ");
     let user_input = get_user_input();
     create_file(user_input).unwrap();
 }
