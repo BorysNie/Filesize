@@ -1,7 +1,6 @@
-the_size = float(input('Enter file size (MB): '))
-
+the_size  = float(input('Enter file size (MB): '))
 file_size = 0
-string = 'abcdefghijklmnopqrstuvwxyz0123456789'
+string    = 'abcdefghijklmnopqrstuvwxyz0123456789'
 
 if the_size >= 0:
     File = open(str(the_size) + 'MB.txt', 'w')
@@ -11,4 +10,3 @@ if the_size >= 0:
 else:
     Error = ValueError('Please enter a positive number!')
     raise Error
-

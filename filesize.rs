@@ -30,4 +30,3 @@ fn main() {
     let user_input = get_user_input();
     create_file(user_input).unwrap();
 }
-
