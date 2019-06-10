@@ -4,28 +4,31 @@
 
 using namespace std;
 
-int main() {
-  double file_size;
-  double the_size;
-  string file_name;
-  string characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-  file_size = 0;
+double fileSize = 0;
+double theSize;
+string fileName;
+string chars = "abcdefghijklmnopqrstuvwxyz0123456789";
 
-  cout << "Enter file size in (MB): ";
-  cin  >> the_size;
-
-  file_name = to_string(the_size) + "MB.txt";
-
-  if (the_size < 0) {
+int generateDataInMB(string fileName, double theSize) {
+  if (theSize <= 0) {
     cout << "Enter a valid number! \n";
-    system("pause");
+    generateDataInMB;
   } else {
     ofstream file;
-    file.open(file_name);
-    while (file_size < (the_size * 1048576)) { //bytes in 1MB
-      file << characters;
-      file_size += characters.length();
-    }
+    file.open(fileName);
+    while (fileSize < (theSize * 1048576)) { //bytes in 1MB
+      file << chars;
+      fileSize += chars.length(); }
   file.close();
+  cout << "Done!" << endl;
   }
+}
+
+int main() {
+  cout << "Enter file size in (MB): ";
+  cin  >> theSize;
+
+  fileName = to_string(theSize) + "MB.txt"; // Adds decimal point to fileName
+
+  generateDataInMB(fileName, theSize);
 }
