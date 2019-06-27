@@ -7,6 +7,7 @@ class Filesize {
     System.out.println("Enter file size (MB): ");
     Scanner x = new Scanner(System.in);
     float the_size = x.nextFloat(); // Idk why but you need to convert it...
+    x.close();
 
     String file_name = new String(the_size + "MB.txt");
 
