@@ -1,6 +1,5 @@
 # Create a specific size file.
-This program creates a file of a certain size defined by the user. Once the program is run, the user is asked to input a valid number. 
-This creates a file named <nr-inputed-by-user>MB (.txt - extension is optional depending on the language) 
+This program creates a file named $(user_defined_size)MB.txt of a user defined size. 
 
 More to come in other languages!
 
